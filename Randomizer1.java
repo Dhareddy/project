@@ -7,6 +7,8 @@ import java.util.Random;
 public class Randomizer1 {
 
 	static Queue<Boolean> p; 
+
+static Queue<Integer> queue = new PriorityQueue<Integer>();
 	
 	public static Queue<Integer> sendingRandomNumber(){
 			
@@ -28,6 +30,11 @@ public class Randomizer1 {
 		
 			for(int q2:q1){
 				 p = PrimeRanndomizer1.checkPrime(q2);
+			}
+		for(int temp:queue)
+				
+			{
+				System.out.println(temp);
 			}
 			for(boolean p1:p){
 				System.out.println(p1);
